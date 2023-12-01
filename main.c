@@ -12,7 +12,7 @@ enum {
 };
 
 char* task(char* lines);
-int append(char** dst, const char* src);
+int append(char** dest, const char* src);
 
 int main()
 {
@@ -43,17 +43,17 @@ int main()
     return 0;
 }
 
-int append(char** dst, const char* src)
+int append(char** dest, const char* src)
 {
-    size_t dst_len = *dst ? strlen(*dst) + 1 : 0;
-    char* new_dst = (char*)realloc(*dst, (dst_len + strlen(src) + 1) * sizeof(char));
-    if (new_dst == NULL) {
+    size_t dest_len = *dest ? strlen(*dest) + 1 : 0;
+    char* new_dest = (char*)realloc(*dest, (dest_len + strlen(src) + 1) * sizeof(char));
+    if (new_dest == NULL) {
         return BAD_ALLOC;
     }
-    *dst = new_dst;
-    memcpy(*dst + dst_len, src, strlen(src) + 1);
-    if (dst_len) {
-        *(*dst + dst_len - 1) = ' ';
+    *dest = new_dest;
+    memcpy(*dest + dest_len, src, strlen(src) + 1);
+    if (dest_len) {
+        *(*dest + dest_len - 1) = ' ';
     }
     return OK;
 }
