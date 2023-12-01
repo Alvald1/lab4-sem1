@@ -4,8 +4,15 @@
 #include <string.h>
 
 #define PROMPT "$ "
+#define DEL 3
+#define DUP 4
+enum {
+    OK = 1,
+    BAD_ALLOC = 2
+};
 
 char* task(char* lines);
+int append(char** dst, const char* src);
 
 int main()
 {
@@ -31,16 +38,48 @@ int main()
         result = task(lines);
         printf("%s", result);
     }
+    free(result);
     free(lines);
     return 0;
 }
 
+int append(char** dst, const char* src)
+{
+    size_t dst_len = *dst ? strlen(*dst) + 1 : 0;
+    char* new_dst = (char*)realloc(*dst, (dst_len + strlen(src) + 1) * sizeof(char));
+    if (new_dst == NULL) {
+        return BAD_ALLOC;
+    }
+    *dst = new_dst;
+    memcpy(*dst + dst_len, src, strlen(src) + 1);
+    if (dst_len) {
+        *(*dst + dst_len) = ' ';
+    }
+    return OK;
+}
+
 char* task(char* lines)
 {
-    char *result = NULL, *line = NULL;
-    line = strtok(lines, "\n");
+    size_t result_len = 0;
+    int index = 1;
+    char *result = NULL, *line = NULL, *word = NULL, *save_line = NULL, *save_word = NULL;
+    line = strtok_r(lines, "\n", &save_line);
     do {
-        printf("%s\n", line);
-    } while ((line = strtok(NULL, "\n")));
+        result_len = result ? strlen(result) : 0;
+        word = strtok_r(line, " \t", &save_word);
+        do {
+            if (index % DEL == 0) {
+                ++index;
+                continue;
+            } else if (index % DUP == 0) {
+                append(&result, word);
+            }
+            append(&result, word);
+            ++index;
+        } while ((word = strtok_r(NULL, " \t", &save_word)));
+        if (result_len) {
+            *(result + result_len + 1) = '\n';
+        }
+    } while ((line = strtok_r(NULL, "\n", &save_line)));
     return result;
 }
