@@ -138,7 +138,7 @@ char* readline(const char* prompt)
             }
             cur_pos = new_buffer + (cur_pos - buffer);
             buffer = new_buffer;
-            *(cur_pos + 1) = '\0';
+            *(cur_pos) = '\0';
             break;
         }
     }
