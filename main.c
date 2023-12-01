@@ -53,7 +53,7 @@ int append(char** dst, const char* src)
     *dst = new_dst;
     memcpy(*dst + dst_len, src, strlen(src) + 1);
     if (dst_len) {
-        *(*dst + dst_len) = ' ';
+        *(*dst + dst_len - 1) = ' ';
     }
     return OK;
 }
@@ -61,10 +61,11 @@ int append(char** dst, const char* src)
 char* task(char* lines)
 {
     size_t result_len = 0;
-    int index = 1;
+    int index;
     char *result = NULL, *line = NULL, *word = NULL, *save_line = NULL, *save_word = NULL;
     line = strtok_r(lines, "\n", &save_line);
     do {
+        index = 1;
         result_len = result ? strlen(result) : 0;
         word = strtok_r(line, " \t", &save_word);
         do {
@@ -78,7 +79,7 @@ char* task(char* lines)
             ++index;
         } while ((word = strtok_r(NULL, " \t", &save_word)));
         if (result_len) {
-            *(result + result_len + 1) = '\n';
+            *(result + result_len) = '\n';
         }
     } while ((line = strtok_r(NULL, "\n", &save_line)));
     return result;
