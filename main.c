@@ -5,53 +5,42 @@
 
 #define PROMPT "$ "
 
-enum {
-    BAD_ALLOC = 1,
-    OK
-};
-
-int append(char*** words, int* cnt_words, char* word);
-void print(char** words, int cnt_words);
+char* task(char* lines);
 
 int main()
 {
-    char *line, *lines = NULL;
-    size_t lines_len;
+    char *line = NULL, *lines = NULL, *result = NULL;
+    size_t lines_len = 0, line_len = 0;
     while ((line = readline(PROMPT))) {
         lines_len = lines ? strlen(lines) + 1 : 0;
-        char* new_lines = (char*)realloc(lines, (lines_len + strlen(line) + 1) * sizeof(char));
+        line_len = strlen(line);
+        char* new_lines = (char*)realloc(lines, (lines_len + line_len + 2) * sizeof(char));
         if (new_lines == NULL) {
             free(line);
             free(lines);
             return 0;
         }
         lines = new_lines;
-        memcpy(lines + lines_len, line, strlen(line) + 1);
+        memcpy(lines + lines_len, line, line_len + 1);
         if (lines_len) {
             *(lines + lines_len - 1) = '\n';
         }
         free(line);
     }
-    printf("%s", lines);
+    if (lines) {
+        result = task(lines);
+        printf("%s", result);
+    }
     free(lines);
     return 0;
 }
 
-int append(char*** words, int* cnt_words, char* word)
+char* task(char* lines)
 {
-    char** new_array = (char**)realloc(*words, (*cnt_words + 1) * sizeof(char*));
-    if (new_array == NULL) {
-        return BAD_ALLOC;
-    }
-    *words = new_array;
-    *((*words) + (*cnt_words)) = word;
-    ++*cnt_words;
-    return OK;
-}
-
-void print(char** words, int cnt_words)
-{
-    while (cnt_words--) {
-        printf("%s\n", *words++);
-    }
+    char *result = NULL, *line = NULL;
+    line = strtok(lines, "\n");
+    do {
+        printf("%s\n", line);
+    } while ((line = strtok(NULL, "\n")));
+    return result;
 }
