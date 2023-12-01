@@ -34,8 +34,11 @@ int main()
         }
         free(line);
     }
-    if (lines) {
-        result = task(lines);
+    if (lines == NULL) {
+        return 0;
+    }
+    result = task(lines);
+    if (result) {
         printf("%s", result);
     }
     free(result);
@@ -73,9 +76,13 @@ char* task(char* lines)
                 ++index;
                 continue;
             } else if (index % DUP == 0) {
-                append(&result, word);
+                if (append(&result, word) == BAD_ALLOC) {
+                    return NULL;
+                }
             }
-            append(&result, word);
+            if (append(&result, word) == BAD_ALLOC) {
+                return NULL;
+            }
             ++index;
         } while ((word = strtok_r(NULL, " \t", &save_word)));
         if (result_len) {
