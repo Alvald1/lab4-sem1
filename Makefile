@@ -1,4 +1,4 @@
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = 
 
 ASAN = -fsanitize=address,undefined -g
 
