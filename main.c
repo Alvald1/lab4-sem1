@@ -42,7 +42,6 @@ int append(char** dest, const char* src)
     if (new_dest == NULL) {
         return BAD_ALLOC;
     }
-
     *dest = new_dest;
     memcpy(*dest + dest_len, src, src_len + 1);
     if (dest_len) {
@@ -86,7 +85,7 @@ char* readline(const char* prompt)
     char* buffer = (char*)malloc(size_inc);
     char* cur_pos = buffer;
     while (1) {
-        if (scanf("%10[^\n]%n", cur_pos, &cnt) == EOF) {
+        if (scanf("%9[^\n]%n", cur_pos, &cnt) == EOF) {
             free(buffer);
             return NULL;
         }
@@ -135,10 +134,6 @@ char* strtok(char* str, const char* delim)
     }
     if (str == NULL) {
         str = save_ptr;
-    }
-    if (*str == '\0') {
-        save_ptr = str;
-        return NULL;
     }
     while (*str && is_delim(delim, *str) == OK) {
         ++str;
