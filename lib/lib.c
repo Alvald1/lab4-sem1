@@ -1,6 +1,8 @@
 #include "lib.h"
 #include <stdio.h>
 
+int is_delim(const char* delim, char c);
+
 char* readline(const char* prompt)
 {
     printf("%s", prompt);

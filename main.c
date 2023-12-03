@@ -1,7 +1,7 @@
-#include <readline/readline.h>
 #include <stdio.h>
-// #include <stdlib.h>
-// #include <string.h>
+#include <stdlib.h>
+// #include <readline/readline.h>
+//  #include <string.h>
 #include "lib/lib.h"
 
 #define PROMPT "$ "
