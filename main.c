@@ -79,19 +79,19 @@ char* readline(const char* prompt)
 {
     printf("%s", prompt);
     int size_inc = 10;
-    int max_len = size_inc;
-    int len = 0, cnt = 0;
+    int len = 0, cnt, max_len = size_inc + 1;
     char* new_buffer = NULL;
-    char* buffer = (char*)malloc(size_inc);
+    char* buffer = (char*)malloc(max_len);
     char* cur_pos = buffer;
     while (1) {
-        if (scanf("%9[^\n]%n", cur_pos, &cnt) == EOF) {
+        cnt = 0;
+        if (scanf("%10[^\n]%n", cur_pos, &cnt) == EOF) {
             free(buffer);
             return NULL;
         }
         len += cnt;
         cur_pos += cnt;
-        if (len == max_len) {
+        if (cnt == size_inc) {
             new_buffer = (char*)realloc(buffer, max_len += size_inc);
             if (new_buffer == NULL) {
                 free(buffer);
@@ -105,9 +105,9 @@ char* readline(const char* prompt)
                 free(buffer);
                 return NULL;
             }
-            cur_pos = new_buffer + len;
             buffer = new_buffer;
-            *(cur_pos) = '\0';
+            cur_pos = new_buffer + len;
+            *cur_pos = '\0';
             break;
         }
     }
