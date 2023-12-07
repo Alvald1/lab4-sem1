@@ -1,8 +1,9 @@
+#include <readline/readline.h>
 #include <stdio.h>
 #include <stdlib.h>
-// #include <readline/readline.h>
-//  #include <string.h>
-#include "lib/lib.h"
+#include <string.h>
+#include <time.h>
+// #include "lib/lib.h"
 
 #define PROMPT "$ "
 #define DEL 3
@@ -20,10 +21,14 @@ int main()
 {
     char *line = NULL, *result = NULL;
     while ((line = readline(PROMPT))) {
+        clock_t start = clock();
         result = task(line);
         if (result) {
             printf("\n\"%s\"\n", result);
         }
+        clock_t end = clock();
+        float seconds = (float)(end - start) / CLOCKS_PER_SEC;
+        printf("time: %f\n", seconds);
         free(line);
         free(result);
     }

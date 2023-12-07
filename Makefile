@@ -11,7 +11,7 @@ LDFLAGS = -lreadline
 all: compile
 
 compile: formating
-	cc -c *.c $(CFLAGS) 
+	cc -c *.c $(CFLAGS) $(LDFLAGS)
 	cc -c $(LIB_DIR)/*.c $(CFLAGS)
 	cc *.o $(CFLAGS) -o $(EXECUTABLE)_clean $(LDFLAGS)
 	rm *.o
