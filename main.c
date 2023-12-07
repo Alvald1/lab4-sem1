@@ -1,9 +1,9 @@
-#include <readline/readline.h>
 #include <stdio.h>
+//#include <readline/readline.h>
 #include <stdlib.h>
-#include <string.h>
+//#include <string.h>
 #include <time.h>
-// #include "lib/lib.h"
+ #include "lib/lib.h"
 
 #define PROMPT "$ "
 #define DEL 3

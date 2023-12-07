@@ -22,7 +22,7 @@ debug: formating
 	cc *.o $(CFLAGS) -o $(EXECUTABLE)_debug $(LDFLAGS)
 	rm *.o
 
-asan: formating
+asan: 
 	clang -c *.c $(CFLAGS) $(ASAN)
 	clang -c $(LIB_DIR)/*.c $(CFLAGS) $(ASAN)
 	clang *.o $(CFLAGS) $(ASAN) -o $(EXECUTABLE)_asan $(LDFLAGS)
