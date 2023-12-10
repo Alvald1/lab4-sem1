@@ -6,14 +6,16 @@ REPORT_DIR = report_dir
 LIB_DIR = lib
 EXECUTABLE = bin
 
+OPTIM = -Og
+
 LDFLAGS = -lreadline
 
 all: compile
 
 compile: formating
-	cc -c *.c $(CFLAGS) $(LDFLAGS)
-	cc -c $(LIB_DIR)/*.c $(CFLAGS)
-	cc *.o $(CFLAGS) -o $(EXECUTABLE)_clean $(LDFLAGS)
+	cc -c *.c $(CFLAGS) $(LDFLAGS) $(OPTIM)
+	cc -c $(LIB_DIR)/*.c $(CFLAGS) $(OPTIM)
+	cc *.o $(CFLAGS) -o $(EXECUTABLE)_clean $(LDFLAGS) $(OPTIM)
 	rm *.o
 
 debug: formating

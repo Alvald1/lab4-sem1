@@ -1,0 +1,180 @@
+Optimization: -Og, Dataset: results_my/out_10000/-Og
+Average Time: 0.0002716399999999999
+
+Optimization: -Og, Dataset: results_my/out_20000/-Og
+Average Time: 0.0009090700000000003
+
+Optimization: -Og, Dataset: results_my/out_30000/-Og
+Average Time: 0.001910580000000001
+
+Optimization: -Og, Dataset: results_my/out_40000/-Og
+Average Time: 0.0031447100000000006
+
+Optimization: -Og, Dataset: results_my/out_50000/-Og
+Average Time: 0.005577800000000002
+
+Optimization: -Og, Dataset: results_my/out_60000/-Og
+Average Time: 0.007549669999999995
+
+Optimization: -Og, Dataset: results_my/out_70000/-Og
+Average Time: 0.010287490000000002
+
+Optimization: -Og, Dataset: results_my/out_80000/-Og
+Average Time: 0.013134890000000005
+
+Optimization: -Og, Dataset: results_my/out_90000/-Og
+Average Time: 0.01648270999999999
+
+Optimization: -Og, Dataset: results_my/out_100000/-Og
+Average Time: 0.021688730000000003
+
+Optimization: -O0, Dataset: results_my/out_10000/-O0
+Average Time: 0.0006781000000000001
+
+Optimization: -O0, Dataset: results_my/out_20000/-O0
+Average Time: 0.00211558
+
+Optimization: -O0, Dataset: results_my/out_30000/-O0
+Average Time: 0.00456457
+
+Optimization: -O0, Dataset: results_my/out_40000/-O0
+Average Time: 0.00762479
+
+Optimization: -O0, Dataset: results_my/out_50000/-O0
+Average Time: 0.013137899999999996
+
+Optimization: -O0, Dataset: results_my/out_60000/-O0
+Average Time: 0.018137719999999996
+
+Optimization: -O0, Dataset: results_my/out_70000/-O0
+Average Time: 0.024709099999999998
+
+Optimization: -O0, Dataset: results_my/out_80000/-O0
+Average Time: 0.03165298999999999
+
+Optimization: -O0, Dataset: results_my/out_90000/-O0
+Average Time: 0.03972267999999998
+
+Optimization: -O0, Dataset: results_my/out_100000/-O0
+Average Time: 0.05103871
+
+Optimization: -O1, Dataset: results_my/out_10000/-O1
+Average Time: 0.00041074999999999993
+
+Optimization: -O1, Dataset: results_my/out_20000/-O1
+Average Time: 0.00127737
+
+Optimization: -O1, Dataset: results_my/out_30000/-O1
+Average Time: 0.002721670000000001
+
+Optimization: -O1, Dataset: results_my/out_40000/-O1
+Average Time: 0.004501100000000001
+
+Optimization: -O1, Dataset: results_my/out_50000/-O1
+Average Time: 0.007767719999999999
+
+Optimization: -O1, Dataset: results_my/out_60000/-O1
+Average Time: 0.010930690000000003
+
+Optimization: -O1, Dataset: results_my/out_70000/-O1
+Average Time: 0.014775009999999998
+
+Optimization: -O1, Dataset: results_my/out_80000/-O1
+Average Time: 0.01919322
+
+Optimization: -O1, Dataset: results_my/out_90000/-O1
+Average Time: 0.02393016
+
+Optimization: -O1, Dataset: results_my/out_100000/-O1
+Average Time: 0.031357840000000005
+
+Optimization: -O2, Dataset: results_my/out_10000/-O2
+Average Time: 0.0016155100000000012
+
+Optimization: -O2, Dataset: results_my/out_20000/-O2
+Average Time: 0.005749959999999999
+
+Optimization: -O2, Dataset: results_my/out_30000/-O2
+Average Time: 0.012611319999999995
+
+Optimization: -O2, Dataset: results_my/out_40000/-O2
+Average Time: 0.021050399999999997
+
+Optimization: -O2, Dataset: results_my/out_50000/-O2
+Average Time: 0.03636712
+
+Optimization: -O2, Dataset: results_my/out_60000/-O2
+Average Time: 0.05142088999999998
+
+Optimization: -O2, Dataset: results_my/out_70000/-O2
+Average Time: 0.06999105
+
+Optimization: -O2, Dataset: results_my/out_80000/-O2
+Average Time: 0.09043594
+
+Optimization: -O2, Dataset: results_my/out_90000/-O2
+Average Time: 0.11309555999999996
+
+Optimization: -O2, Dataset: results_my/out_100000/-O2
+Average Time: 0.14818805
+
+Optimization: -O3, Dataset: results_my/out_10000/-O3
+Average Time: 0.0013691200000000001
+
+Optimization: -O3, Dataset: results_my/out_20000/-O3
+Average Time: 0.005226540000000001
+
+Optimization: -O3, Dataset: results_my/out_30000/-O3
+Average Time: 0.011101330000000003
+
+Optimization: -O3, Dataset: results_my/out_40000/-O3
+Average Time: 0.018724110000000002
+
+Optimization: -O3, Dataset: results_my/out_50000/-O3
+Average Time: 0.03184181999999999
+
+Optimization: -O3, Dataset: results_my/out_60000/-O3
+Average Time: 0.04597977999999998
+
+Optimization: -O3, Dataset: results_my/out_70000/-O3
+Average Time: 0.061954050000000004
+
+Optimization: -O3, Dataset: results_my/out_80000/-O3
+Average Time: 0.08032170999999998
+
+Optimization: -O3, Dataset: results_my/out_90000/-O3
+Average Time: 0.10053053
+
+Optimization: -O3, Dataset: results_my/out_100000/-O3
+Average Time: 0.12977994999999995
+
+Optimization: -Ofast, Dataset: results_my/out_10000/-Ofast
+Average Time: 0.00162983
+
+Optimization: -Ofast, Dataset: results_my/out_20000/-Ofast
+Average Time: 0.005779089999999997
+
+Optimization: -Ofast, Dataset: results_my/out_30000/-Ofast
+Average Time: 0.012584520000000004
+
+Optimization: -Ofast, Dataset: results_my/out_40000/-Ofast
+Average Time: 0.021334110000000003
+
+Optimization: -Ofast, Dataset: results_my/out_50000/-Ofast
+Average Time: 0.03611427000000002
+
+Optimization: -Ofast, Dataset: results_my/out_60000/-Ofast
+Average Time: 0.05127026
+
+Optimization: -Ofast, Dataset: results_my/out_70000/-Ofast
+Average Time: 0.06960590000000001
+
+Optimization: -Ofast, Dataset: results_my/out_80000/-Ofast
+Average Time: 0.09091717999999999
+
+Optimization: -Ofast, Dataset: results_my/out_90000/-Ofast
+Average Time: 0.11554185999999994
+
+Optimization: -Ofast, Dataset: results_my/out_100000/-Ofast
+Average Time: 0.14653400000000005
+

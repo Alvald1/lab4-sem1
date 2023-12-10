@@ -1,0 +1,180 @@
+Optimization: -Og, Dataset: results_lib/out_10000/-Og
+Average Time: 0.00026906
+
+Optimization: -Og, Dataset: results_lib/out_20000/-Og
+Average Time: 0.0009168700000000003
+
+Optimization: -Og, Dataset: results_lib/out_30000/-Og
+Average Time: 0.0019053600000000005
+
+Optimization: -Og, Dataset: results_lib/out_40000/-Og
+Average Time: 0.003186309999999999
+
+Optimization: -Og, Dataset: results_lib/out_50000/-Og
+Average Time: 0.00532155
+
+Optimization: -Og, Dataset: results_lib/out_60000/-Og
+Average Time: 0.007583339999999999
+
+Optimization: -Og, Dataset: results_lib/out_70000/-Og
+Average Time: 0.010343789999999999
+
+Optimization: -Og, Dataset: results_lib/out_80000/-Og
+Average Time: 0.013791950000000006
+
+Optimization: -Og, Dataset: results_lib/out_90000/-Og
+Average Time: 0.017054509999999995
+
+Optimization: -Og, Dataset: results_lib/out_100000/-Og
+Average Time: 0.02301904000000001
+
+Optimization: -O0, Dataset: results_lib/out_10000/-O0
+Average Time: 0.00074375
+
+Optimization: -O0, Dataset: results_lib/out_20000/-O0
+Average Time: 0.0020765299999999996
+
+Optimization: -O0, Dataset: results_lib/out_30000/-O0
+Average Time: 0.00455841
+
+Optimization: -O0, Dataset: results_lib/out_40000/-O0
+Average Time: 0.0077031899999999995
+
+Optimization: -O0, Dataset: results_lib/out_50000/-O0
+Average Time: 0.012595920000000005
+
+Optimization: -O0, Dataset: results_lib/out_60000/-O0
+Average Time: 0.018040209999999997
+
+Optimization: -O0, Dataset: results_lib/out_70000/-O0
+Average Time: 0.028192939999999996
+
+Optimization: -O0, Dataset: results_lib/out_80000/-O0
+Average Time: 0.03302814999999999
+
+Optimization: -O0, Dataset: results_lib/out_90000/-O0
+Average Time: 0.040849210000000004
+
+Optimization: -O0, Dataset: results_lib/out_100000/-O0
+Average Time: 0.05212056000000001
+
+Optimization: -O1, Dataset: results_lib/out_10000/-O1
+Average Time: 0.00041718000000000007
+
+Optimization: -O1, Dataset: results_lib/out_20000/-O1
+Average Time: 0.0013188700000000008
+
+Optimization: -O1, Dataset: results_lib/out_30000/-O1
+Average Time: 0.00276842
+
+Optimization: -O1, Dataset: results_lib/out_40000/-O1
+Average Time: 0.00452114
+
+Optimization: -O1, Dataset: results_lib/out_50000/-O1
+Average Time: 0.00768383
+
+Optimization: -O1, Dataset: results_lib/out_60000/-O1
+Average Time: 0.01098528
+
+Optimization: -O1, Dataset: results_lib/out_70000/-O1
+Average Time: 0.016377680000000006
+
+Optimization: -O1, Dataset: results_lib/out_80000/-O1
+Average Time: 0.020320139999999997
+
+Optimization: -O1, Dataset: results_lib/out_90000/-O1
+Average Time: 0.025211519999999998
+
+Optimization: -O1, Dataset: results_lib/out_100000/-O1
+Average Time: 0.0333989
+
+Optimization: -O2, Dataset: results_lib/out_10000/-O2
+Average Time: 0.00155134
+
+Optimization: -O2, Dataset: results_lib/out_20000/-O2
+Average Time: 0.005959199999999999
+
+Optimization: -O2, Dataset: results_lib/out_30000/-O2
+Average Time: 0.01259471
+
+Optimization: -O2, Dataset: results_lib/out_40000/-O2
+Average Time: 0.02107295
+
+Optimization: -O2, Dataset: results_lib/out_50000/-O2
+Average Time: 0.03597318
+
+Optimization: -O2, Dataset: results_lib/out_60000/-O2
+Average Time: 0.05177519
+
+Optimization: -O2, Dataset: results_lib/out_70000/-O2
+Average Time: 0.07949511999999996
+
+Optimization: -O2, Dataset: results_lib/out_80000/-O2
+Average Time: 0.09681125000000002
+
+Optimization: -O2, Dataset: results_lib/out_90000/-O2
+Average Time: 0.11785744000000005
+
+Optimization: -O2, Dataset: results_lib/out_100000/-O2
+Average Time: 0.15636390000000003
+
+Optimization: -O3, Dataset: results_lib/out_10000/-O3
+Average Time: 0.0014605000000000006
+
+Optimization: -O3, Dataset: results_lib/out_20000/-O3
+Average Time: 0.005142559999999997
+
+Optimization: -O3, Dataset: results_lib/out_30000/-O3
+Average Time: 0.011319550000000003
+
+Optimization: -O3, Dataset: results_lib/out_40000/-O3
+Average Time: 0.01861914
+
+Optimization: -O3, Dataset: results_lib/out_50000/-O3
+Average Time: 0.03203194000000001
+
+Optimization: -O3, Dataset: results_lib/out_60000/-O3
+Average Time: 0.04630261999999998
+
+Optimization: -O3, Dataset: results_lib/out_70000/-O3
+Average Time: 0.06586059000000005
+
+Optimization: -O3, Dataset: results_lib/out_80000/-O3
+Average Time: 0.08332810999999998
+
+Optimization: -O3, Dataset: results_lib/out_90000/-O3
+Average Time: 0.10635054000000002
+
+Optimization: -O3, Dataset: results_lib/out_100000/-O3
+Average Time: 0.13505700999999998
+
+Optimization: -Ofast, Dataset: results_lib/out_10000/-Ofast
+Average Time: 0.0015714400000000001
+
+Optimization: -Ofast, Dataset: results_lib/out_20000/-Ofast
+Average Time: 0.0059114499999999995
+
+Optimization: -Ofast, Dataset: results_lib/out_30000/-Ofast
+Average Time: 0.012728509999999997
+
+Optimization: -Ofast, Dataset: results_lib/out_40000/-Ofast
+Average Time: 0.02088894
+
+Optimization: -Ofast, Dataset: results_lib/out_50000/-Ofast
+Average Time: 0.036138280000000016
+
+Optimization: -Ofast, Dataset: results_lib/out_60000/-Ofast
+Average Time: 0.05686252000000001
+
+Optimization: -Ofast, Dataset: results_lib/out_70000/-Ofast
+Average Time: 0.07340013000000002
+
+Optimization: -Ofast, Dataset: results_lib/out_80000/-Ofast
+Average Time: 0.09474385
+
+Optimization: -Ofast, Dataset: results_lib/out_90000/-Ofast
+Average Time: 0.12499406000000002
+
+Optimization: -Ofast, Dataset: results_lib/out_100000/-Ofast
+Average Time: 0.15360356
+
